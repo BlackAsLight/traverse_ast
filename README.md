@@ -5,7 +5,7 @@ A simple module to travese an AST. Its specifcally designed to travel one made f
 There is also a traverseAsync if the function being passed in will be returning a promise.
 ```ts
 import initSwc, { parse, print } from 'https://esm.sh/@swc/wasm-web@1.3.50'
-import { traverse, NodeType } from 'https://deno.land/x/traverse_ast@v0.0.0'
+import { traverse, NodeType } from 'https://deno.land/x/traverse_ast@v0.0.1/mod.ts'
 
 await initSwc()
 const ast = await parse(await Deno.readTextFile('./input.js'))
